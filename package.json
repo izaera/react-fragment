@@ -1,0 +1,34 @@
+{
+  "name": "react-fragment",
+  "description": "Sample React Fragment project",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "keywords": [
+    "liferay",
+    "liferay-fragments"
+  ],
+  "scripts": {
+    "add-collection": "yo liferay-fragments:collection",
+    "add-fragment": "yo liferay-fragments:fragment",
+    "add-fragment-composition": "yo liferay-fragments:fragment-composition",
+    "add-page-template": "yo liferay-fragments:page-template",
+    "compress": "liferay-npm-bundler && yo liferay-fragments:compress",
+    "export": "yo liferay-fragments:export",
+    "import": "liferay-npm-bundler && yo liferay-fragments:import",
+    "import:watch": "yo liferay-fragments:import --watch",
+    "preview": "yo liferay-fragments:preview"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "liferay-npm-bundler": "3.0.0-alpha.1"
+  }
+}
