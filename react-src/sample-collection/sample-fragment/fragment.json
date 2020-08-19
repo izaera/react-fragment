@@ -4,5 +4,5 @@
   "htmlPath": "index.html",
   "jsPath": "main.js",
   "name": "Sample fragment",
-  "type": "section"
+  "type": "react"
 }
