@@ -1,18 +1,18 @@
-// Import default DXP preset (the same liferay-npm-scripts uses, refactored for bundler 3)
-const defaults = require("liferay-npm-bundler/lib/liferay-npm-bundler.config.js");
-
 module.exports = {
-  ...defaults,
+  "create-jar": false,
   source: "react-src",
   output: "src",
   workdir: "build",
   exports: {
     "sample-fragment": "./sample-collection/sample-fragment/main.js"
   },
+  imports: {
+    "frontend-js-react-web": {
+      react: "*"
+    }
+  },
   webpack: {
-    ...defaults.webpack,
     module: {
-      ...defaults.module,
       rules: [
         {
           exclude: /node_modules/,
